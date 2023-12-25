@@ -17,15 +17,7 @@ void input(int Maxtrix[][MAX], int &a, int &b)
     }
 }
 
-void display_output(int result_array[][1], int a)
-{
-    for (int i = 0; i < a; i++)
-    {
-        cout << result_array[i][0] << "\n";
-    }
-}
-
-void is_sum(int Maxtrix[][MAX], int result_array[][1], int a, int b)
+void find_max_element_each_row(int Maxtrix[][MAX], int result_array[][1], int a, int b)
 {
     for (int i = 0; i < a; i++)
     {
@@ -37,17 +29,27 @@ void is_sum(int Maxtrix[][MAX], int result_array[][1], int a, int b)
     {
         for (int j = 0; j < b; j++)
         {
-            result_array[i][0] += Maxtrix[i][j];
+            if (result_array[i][0] < Maxtrix[i][j])
+                result_array[i][0] = Maxtrix[i][j];
         }
     }
+}
+
+void sum_Matrix(int Matrix[][1], int a)
+{
+    int sum = 0;
+    for (int i = 0; i < a; i++)
+    {
+        sum += Matrix[i][0];
+    }
+    cout << "Result: " << sum;
 }
 
 int main()
 {
     int Maxtrix[MAX][MAX], result_Matrix[MAX][1], a, b;
     input(Maxtrix, a, b);
-    is_sum(Maxtrix, result_Matrix, a, b);
-    cout << "Result: \n";
-    display_output(result_Matrix, a);
+    find_max_element_each_row(Maxtrix, result_Matrix, a, b);
+    sum_Matrix(result_Matrix, a);
     return 0;
 }

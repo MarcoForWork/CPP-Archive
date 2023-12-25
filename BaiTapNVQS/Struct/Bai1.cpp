@@ -79,6 +79,12 @@ struct DonThuc
         cout << "\nGia tri cua don thuc la: " << Ketqua << "\n";
     }
 
+    void DaoHam(DonThuc &DaoHam)
+    {
+        DaoHam.He_so = He_so * Bac;
+        DaoHam.Bac = Bac - 1;
+    }
+
     // Operator overload
     DonThuc operator+(const DonThuc &other)
     {
@@ -134,7 +140,7 @@ struct DonThuc
 
 int main()
 {
-    DonThuc dt, dt1, dt2, Tong, Hieu, Tich, Thuong;
+    DonThuc Dao_Ham, dt, dt1, dt2, Tong, Hieu, Tich, Thuong;
     float ThamSo;
 
     // Tinh gia tri don thuc
@@ -159,6 +165,12 @@ int main()
     Thuong = dt1 / dt2;
     cout << "\nThuong: ";
     Thuong.Xuat();
+
+    cout << "\n\nTINH DAO HAM\n";
+    Dao_Ham.Nhap();
+    Dao_Ham.DaoHam(Dao_Ham);
+    cout << "Ket qua: ";
+    Dao_Ham.Xuat();
 
     return 0;
 }
