@@ -15,6 +15,7 @@ void input(int array[MAX], int &size)
 
 void display_output(int result_array[MAX], int result_size)
 {
+    cout << "Result array is: ";
     for (int i = 0; i < result_size; i++)
     {
         cout << result_array[i] << " ";
@@ -26,6 +27,15 @@ void erase_element(int array[MAX], int result_array[MAX], int size, int &result_
     int position;
     cout << "Enter the element you want to erase: ";
     cin >> position;
+
+    bool erase = true;
+    if (position < 0 || position >= size)
+    {
+        erase = true;
+    }
+    else
+        erase = false;
+    cout << "Function return: " << erase << "\n";
 
     result_size = 0;
     for (int i = 0; i < size; i++)
