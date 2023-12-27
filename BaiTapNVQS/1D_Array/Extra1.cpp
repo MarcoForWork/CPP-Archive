@@ -1,3 +1,6 @@
+// Viết hàm nhập mảng số nguyên a có n phần tử từ bàn phím. Điều kiện giá trị của
+// n: 5<n<100. Nếu giá trị n không thỏa điều kiện này thì yêu cầu người dùng nhập
+// lại .
 #include <iostream>
 #define MAX 100
 using namespace std;

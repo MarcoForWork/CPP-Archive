@@ -1,3 +1,6 @@
+// Viết hàm tìm kiếm giá trị x trong mảng số nguyên a có n phần tử. Nếu tìm thấy
+// thì hàm trả về vị trí phần tử đầu tiên có giá trị bằng x. Ngược lại hàm trả về giá trị
+//-1.
 #include <iostream>
 #define MAX 100
 using namespace std;

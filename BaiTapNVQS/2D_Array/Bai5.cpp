@@ -1,3 +1,4 @@
+// Đổi kí tự đầu tiên của mỗi từ thành chữ in hoa
 #include <iostream>
 #include <cstring>
 #define MAX 100

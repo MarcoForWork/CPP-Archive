@@ -1,3 +1,4 @@
+// Tìm vị trí phần tử lớn nhất trong mảng
 #include <iostream>
 #define MAX 100
 using namespace std;

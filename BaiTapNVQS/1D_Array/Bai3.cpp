@@ -1,3 +1,6 @@
+// Viết hàm xóa phần tử có chỉ số k trong mảng số nguyên a có n phần tử. Nếu giá
+// trị của k<0 hoặc k>=n thì không xóa và hàm trả về giá trị 0. Ngược lại ta xóa giá
+// trị phần tử a[k] và hàm trả về giá trị 1.
 #include <iostream>
 #define MAX 100
 using namespace std;

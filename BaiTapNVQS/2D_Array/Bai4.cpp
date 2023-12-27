@@ -1,3 +1,4 @@
+// Đếm số từ trong 1 chuỗi
 #include <iostream>
 #include <string.h>
 #define MAX 100

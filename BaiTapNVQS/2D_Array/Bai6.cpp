@@ -1,3 +1,4 @@
+// Bỏ các ký tự khoảng trắng thừa
 #include <iostream>
 #include <cstring>
 #define MAX 100

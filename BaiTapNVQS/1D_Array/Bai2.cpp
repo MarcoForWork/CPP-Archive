@@ -1,3 +1,4 @@
+// Kiểm tra mảng có đối xứng hay không ?
 #include <iostream>
 #define MAX 100
 using namespace std;

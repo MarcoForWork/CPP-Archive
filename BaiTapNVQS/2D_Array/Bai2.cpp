@@ -1,3 +1,4 @@
+// Nhân 2 ma trận
 #include <iostream>
 #define MAX 100
 using namespace std;

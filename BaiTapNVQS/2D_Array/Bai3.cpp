@@ -1,3 +1,4 @@
+// Tính tổng các giá trị lớn nhất trên mỗi dòng.
 #include <iostream>
 #define MAX 100
 using namespace std;

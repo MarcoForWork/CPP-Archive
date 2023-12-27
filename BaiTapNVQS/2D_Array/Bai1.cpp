@@ -1,3 +1,4 @@
+// Cộng 2 ma trận
 #include <iostream>
 using namespace std;
 

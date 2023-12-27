@@ -1,3 +1,4 @@
+// Xuất các số nguyên tố có trong mảng số nguyên ra màn hình.
 #include <iostream>
 #define MAX 100
 using namespace std;
