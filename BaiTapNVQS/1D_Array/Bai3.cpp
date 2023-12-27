@@ -31,6 +31,7 @@ void erase_element(int array[MAX], int result_array[MAX], int size, int &result_
     cout << "Enter the element you want to erase: ";
     cin >> position;
 
+    // Check if function return 0 || 1
     bool erase = true;
     if (position < 0 || position >= size)
     {
@@ -46,7 +47,6 @@ void erase_element(int array[MAX], int result_array[MAX], int size, int &result_
         if (i != position - 1)
             result_array[result_size++] = array[i];
     }
-    result_array[result_size] = (int)nullptr;
 }
 
 int main()
