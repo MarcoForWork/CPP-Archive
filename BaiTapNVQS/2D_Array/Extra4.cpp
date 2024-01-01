@@ -29,7 +29,7 @@ void is_sum_row(int array[][MAX], int row, int col, int &sum_row)
     {
         sum_row += array[selected_row - 1][i];
     }
-    cout << "The sum of the " << selected_row << "row has the value of: " << sum_row;
+    cout << "The sum of the " << selected_row << " row has the value of: " << sum_row;
 }
 
 void is_sum_col(int array[][MAX], int row, int col, int &sum_col)
@@ -43,7 +43,7 @@ void is_sum_col(int array[][MAX], int row, int col, int &sum_col)
     {
         sum_col += array[selected_col - 1][i];
     }
-    cout << "The sum of the " << selected_col << "col has the value of: " << sum_col;
+    cout << "The sum of the " << selected_col << " col has the value of: " << sum_col;
 }
 
 void is_sum_all(int array[][MAX], int row, int col, int &sum_all)
